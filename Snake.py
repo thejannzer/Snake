@@ -1,3 +1,4 @@
+
 import pygame
 import random
 from pygame.locals import QUIT, KEYDOWN, K_DOWN, K_UP, K_LEFT, K_RIGHT
@@ -67,6 +68,9 @@ while running:
     elif snake_pixel.bottom > screen_height:
         snake_pixel.top = 0
 
+    #Schlange erweitern
+    
+
 
     # Kollision mit dem Apfel überprüfen
     if snake_pixel.colliderect(apple):
@@ -89,4 +93,3 @@ while running:
     pygame.display.flip()
 
     clock.tick(tick)  # Geschwindigkeit der Schlange (je größer, desto schneller)
-
